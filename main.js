@@ -26,6 +26,9 @@ function toggleMobileMenu() {
     aside.classList.add('inactive'); 
   }
   
+  closeProductDetail();
+
+
   mobileMenu.classList.toggle('inactive');
 }
 //Cerrar el Carrito cuando el Aside este abierto
@@ -35,10 +38,17 @@ function toggleCarritoAside() {
   if (!isMobileMenuClosed) {
     mobileMenu.classList.add('inactive'); 
   }
+
+  const isProductDetailClosed = productDetailContainer.classList.contains('inactive');
   
+  if (!isProductDetailClosed) {
+    productDetailContainer.classList.add('inactive'); 
+  }
+
   aside.classList.toggle('inactive');
 }
 function openProductDetail(){
+
   productDetailContainer.classList.remove('inactive');
 }
 function closeProductDetail() {
