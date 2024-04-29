@@ -47,6 +47,8 @@ function toggleCarritoAside() {
 
   aside.classList.toggle('inactive');
 }
+
+
 function openProductDetail(){
 
   productDetailContainer.classList.remove('inactive');
