@@ -86,7 +86,6 @@ nav {
   justify-content: center;
   align-items: center;
 }
-
 /*** Menu en desktop ***/
 .desktop-menu {
   position: absolute;
@@ -256,6 +255,7 @@ ail {
 }
 .product-card {
   width: 240px;
+  cursor: pointer;
 }
 .product-card img {
   width: 240px;
